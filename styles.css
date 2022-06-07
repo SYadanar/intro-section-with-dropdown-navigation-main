@@ -10,11 +10,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*border: 1px solid red;*/
 }
 
 body{
     font-family: 'Epilogue', sans-serif;
     font-size: 1.125rem;
+}
+
+.navbar{
+    
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 
