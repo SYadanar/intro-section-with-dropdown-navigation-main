@@ -16,6 +16,22 @@
 body{
     font-family: 'Epilogue', sans-serif;
     font-size: 1.125rem;
+    background-color: var(--almostWhite);
+}
+
+.btn.outline-btn{
+    border: 1px solid var(--almostBlack);
+    border-radius: 0.75rem;
+
+    background-color: var(--almostBlack);
+    color: var(--almostWhite);
+}
+
+.btn.outline-btn:hover{
+    background-color: var(--almostWhite);
+    color: var(--almostBlack);
+
+    font-weight: bold;
 }
 
 /* Navbar */
@@ -28,15 +44,60 @@ body{
     display: none;
 }
 
-.btn-register{
-    border-radius: 15px;
+.dropdown-icon:hover{
+    /*transform:rotate(-180deg);*/
+    /*content: url(images/icon-arrow-up.svg);*/
 }
+
+.change-icon{
+    content: url(images/icon-arrow-up.svg);
+}
+
+.dropdown-menu{
+    /*padding-left: 0.5rem;*/
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    max-width: fit-content;
+}
+
+.dropdown-item{
+    color: var(--mediumGray);
+
+    padding-left: 1.3rem;
+}
+
+.dropdown-item img{
+    width: 0.8rem;
+}
+
+.dropdown-item span{
+    margin-left: 10px;
+}
+
+/* Override Bootstrap Navbar link color */
+.navbar-nav .nav-item .nav-link {
+    color: var(--mediumGray);
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: var(--almostBlack);
+}
+
 /* ----------------------- */
 
 /* Hero Section */
+#hero-section{
+    padding-top: 4rem;
+}
+
 #hero-section h1{
     font-size: 4rem;
     font-weight: 700;
+}
+
+.hero-col{
+    padding: 1rem 4rem;
 }
 /* ----------------------- */
 
