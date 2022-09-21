@@ -19,18 +19,27 @@ body{
     background-color: var(--almostWhite);
 }
 
-.btn.outline-btn{
-    border: 1px solid var(--almostBlack);
+.btn{
     border-radius: 0.75rem;
-
-    background-color: var(--almostBlack);
-    color: var(--almostWhite);
 }
 
-.btn.outline-btn:hover{
+.btn.outline-btn{
+    color: var(--mediumGray);
+    border: 1.5px solid var(--mediumGray);
+}
+
+.btn.filled-btn{
+    background-color: var(--almostBlack);
+    color: var(--almostWhite);
+    border: 1px solid var(--almostBlack);
+}
+
+.btn.filled-btn:hover, .btn.outline-btn:hover{
     background-color: var(--almostWhite);
     color: var(--almostBlack);
+}
 
+.btn.filled-btn:hover{
     font-weight: bold;
 }
 
@@ -105,3 +114,26 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (max-width:  991px){
+    .dropdown-menu{
+        border: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    .navbar-nav:last-child .nav-item{
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+
+    .navbar-nav:last-child .nav-item .nav-link{
+        text-align: center;
+    }
+
+    .navbar-nav:last-child .nav-item .btn{
+        width: 100%;
+    }
+}

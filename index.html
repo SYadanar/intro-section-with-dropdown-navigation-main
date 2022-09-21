@@ -21,81 +21,84 @@
   <header>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light px-5 py-3">
-      <a href="index.html" class="navbar-brand pe-5">
-        <img src="images/logo.svg" alt="logo">
-      </a>
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand pe-5">
+          <img src="images/logo.svg" alt="logo">
+        </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="navbar-toggler-icon"></i>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-
-          <li class="nav-item dropdown">
-            <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features <img src="images/icon-arrow-down.svg" class="dropdown-icon" alt="Down Arrow SVG Icon"></a> -->
-
-            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Features
-              <img src="images/icon-arrow-down.svg" class="dropdown-icon" alt="Down Arrow SVG Icon">
-            </a>
-
-
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="#">
-                  <img src="images/icon-todo.svg">
-                  <span>Todo List</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 pe-3">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                  <img src="images/icon-arrow-down.svg" class="dropdown-icon" alt="Down Arrow SVG Icon">
                 </a>
+
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/icon-todo.svg">
+                      <span>Todo List</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/icon-calendar.svg">
+                      <span>Calendar</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/icon-reminders.svg">
+                      <span>Reminders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/icon-planning.svg">
+                      <span>Planning</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <img src="images/icon-calendar.svg">
-                  <span>Calendar</span>
-                </a>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company <img src="images/icon-arrow-down.svg" class="dropdown-icon" alt="Down Arrow SVG Icon"></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                </ul>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <img src="images/icon-reminders.svg">
-                  <span>Reminders</span>
-                </a>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Careers</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <img src="images/icon-planning.svg">
-                  <span>Planning</span>
-                </a>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
               </li>
             </ul>
-          </li>
 
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company <img src="images/icon-arrow-down.svg" class="dropdown-icon" alt="Down Arrow SVG Icon"></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">History</a></li>
-              <li><a class="dropdown-item" href="#">Our Team</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">Careers</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-
-        </ul>
-
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Login</a>
-          </li>
-          <li class="nav-item">
-            <button class="btn outline-btn px-3" type="submit">Register</button>
-          </li>
-        </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn outline-btn px-3" type="submit">Register</button>
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -114,7 +117,7 @@
           <p class="my-4">
             Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
           </p>
-          <button class="btn outline-btn px-4 py-2 mb-5">Learn more</button>
+          <button class="btn filled-btn px-4 py-2 mb-5">Learn more</button>
           <div class="row mt-3">
             <div class="col">
               <img src="images/client-databiz.svg" class="img-fluid" alt="Client Databiz SVG">
